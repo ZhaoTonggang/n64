@@ -41,14 +41,15 @@ if (window.top != window) {
 		// 游戏ID
 		window.gameId = gameInfo.i;
 		// 封面
-		window.backgroundImg = window.location.origin + '/imgs/' + gameInfo.i + '.png';
+		// window.backgroundImg = window.location.origin + '/imgs/' + gameInfo.i + '.png';
+		window.backgroundImg = window.location.origin + '/image/nesico.svg';
 		// ROM
 		window.gameUrl = "../roms/" + gameInfo.i + ".7z";
 		// 初始化
 		window.EJS_player = "#show_box";
 		window.dataPath = "https://other.heheda.top/gamelib/";
 		// 核心
-		window.system = "nes";
+		window.system = "n64";
 		// 广告
 		window.adUrl = "../ads/";
 		// 光枪
