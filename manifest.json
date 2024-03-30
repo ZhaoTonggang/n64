@@ -7,7 +7,7 @@
 	"background_color": "#52c0f9",
 	"display": "standalone",
 	"orientation": "any",
-	"description": "在线畅玩小霸王经典游戏",
+	"description": "在线畅玩N64经典游戏",
 	"scope": "./",
 	"start_url": "./",
 	"prefer_related_applications": false,

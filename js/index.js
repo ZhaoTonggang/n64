@@ -13,6 +13,12 @@ let timeout = null;
 const search = document.getElementById('search');
 const cdtopbt = document.getElementById("cd-top");
 const title = document.title;
+// 设置按钮状态
+if (navigator.share) {
+	document.getElementById("share").style.display = "inline-block";
+} else {
+	console.log("分享功能禁用");
+}
 // 数据加载
 const intdata = () => {
 	fetch('./list.json', {
@@ -105,6 +111,14 @@ const fixsys = () => {
 		sessionStorage.clear();
 		window.location.reload(true);
 	}
+}
+// 分享
+const share = () => {
+	navigator.share({
+		title: 'N64游戏盒 - 在线畅玩N64经典游戏',
+		url: url,
+		text: '推荐使用电脑，运行更加流畅！在线免费畅玩或下载N64游戏，包括魂斗罗，超级玛丽，坦克大战等N64经典游戏，让我们一同找回童年的快乐！玩N64游戏，就认准N64游戏盒！'
+	})
 }
 // 移除遮罩
 document.onreadystatechange = () => {

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN" onselectstart="return false" oncontextmenu=self.event.returnValue=false>
 	<head>
-		<title>N64游戏盒 - 在线畅玩小霸王经典游戏</title>
+		<title>N64游戏盒 - 在线畅玩N64经典游戏</title>
 		<meta charset="UTF-8">
 		<meta name="viewport"
 			content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1, maximum-scale=1">
-		<meta name="description" content="在线免费畅玩或下载N64游戏，包括魂斗罗，超级玛丽，坦克大战等小霸王经典游戏，让我们一同找回童年的快乐！玩N64游戏，就认准N64游戏盒！">
-		<meta name="keywords" content="nes,小霸王,N64,FC游戏,童年回忆,经典游戏,在线游戏,小游戏">
+		<meta name="description" content="在线免费畅玩或下载N64游戏，包括魂斗罗，超级玛丽，坦克大战等N64经典游戏，让我们一同找回童年的快乐！玩N64游戏，就认准N64游戏盒！">
+		<meta name="keywords" content="N64,FC游戏,童年回忆,经典游戏,在线游戏,小游戏">
 		<meta name="author" content="赵彤刚">
 		<meta name="theme-color" content="#00ffff">
 		<!-- DNS预解析 -->
@@ -28,16 +28,12 @@
 	</head>
 	<body class="is-loading">
 		<div class="div1">
-			<a class="title" href="./" title="在线畅玩小霸王经典游戏"><img src="./icons/72x72.png" alt="N64游戏盒" />N64游戏盒</a>
+			<a class="title" href="./" title="在线畅玩N64经典游戏"><img src="./icons/72x72.png" alt="N64游戏盒" />N64游戏盒</a>
 			<input type="checkbox" checked="true" id="yzxtg" />
 			<label for="yzxtg" class="lad">
 				<img src="./image/button/more.png" alt="菜单" title="菜单">
 			</label>
 			<ul class="hul">
-				<li>
-					<input id="search" type="search" maxlength="10" placeholder="请输入关键字" />
-					<input id="searchBt" type="submit" value="搜索" onclick="intdata()" />
-				</li>
 				<li>
 					<a title="游戏盒" target="_blank" rel="noopener noreferrer" href="https://gamebox.heheda.top"><img
 							src="./image/button/gmb.png" alt="游戏盒" />游戏盒</a>
@@ -63,6 +59,14 @@
 				<li>
 					<a title="异常修复" href="javascript:void(0)" onclick="fixsys()"><img src="./image/button/fixsys.svg"
 							alt="异常修复" />修 复</a>
+				</li>
+				<li id="share">
+					<a title="分享" href="javascript:void(0)" onclick="share()"><img src="./image/button/sh.png"
+							alt="分享" />分 享</a>
+				</li>
+				<li>
+					<input id="search" type="search" maxlength="10" placeholder="请输入关键字" />
+					<input id="searchBt" type="submit" value="搜索" onclick="intdata()" />
 				</li>
 			</ul>
 		</div>

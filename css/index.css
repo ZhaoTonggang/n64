@@ -209,6 +209,11 @@ body {
 	cursor: pointer;
 }
 
+/* 分享 */
+#share {
+	display: none;
+}
+
 /*返回顶部按钮*/
 #cd-top {
 	z-index: 99999;
